@@ -115,7 +115,7 @@ extension String {
 
          let fixedTemplate = String.Template(placeholderToken: "X", template: "0XX0", preservedCharacters: .decimalDigits)
          let fixedString = try? "00".applying(template: fixedTemplate)
-         // string == "0000", becuase we explicitly marked decimal digits as
+         // string == "0000", because we explicitly marked decimal digits as
          // being preserved characters that should not be stripped from the
          // source.
          ```
