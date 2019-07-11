@@ -176,7 +176,7 @@ extension String {
 
         var formatted = template.template
         var currentIndex = startIndex;
-        var formatStringIndex = formatted.index(of: template.placeholderToken)
+        var formatStringIndex = formatted.firstIndex(of: template.placeholderToken)
 
         while let placeholderIndex = formatStringIndex, currentIndex < endIndex {
             let characterToInsert = String(self[currentIndex])
@@ -184,7 +184,7 @@ extension String {
 
             // Increment our indices
             currentIndex = index(currentIndex, offsetBy: 1)
-            formatStringIndex = formatted[placeholderIndex...].index(of: template.placeholderToken)
+            formatStringIndex = formatted[placeholderIndex...].firstIndex(of: template.placeholderToken)
         }
 
         // Only use the part of the string we formatted, defaulting to the whole string if we completed formatting
