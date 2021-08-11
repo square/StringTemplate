@@ -80,12 +80,12 @@ extension String {
 
         // MARK: - Public Properties
 
+        public let formattingCharacterSet: CharacterSet
         public let placeholderToken: Character
         public let template: String
 
         // MARK: - Private Properties
 
-        fileprivate let formattingCharacterSet: CharacterSet
         fileprivate let length: Int
 
         // MARK: - Life Cycle
