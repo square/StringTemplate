@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary = 'String templating for Swift made easy.'
   spec.source = { :git => 'https://github.com/square/StringTemplate.git', :tag => "v#{spec.version}" }
   spec.source_files = 'Sources/*.swift'
-  spec.swift_version = '4.0'
+  spec.swift_version = '5.0'
 
   spec.requires_arc = true
   spec.compiler_flags = '-whole-module-optimization'
