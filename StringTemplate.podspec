@@ -11,10 +11,11 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   spec.compiler_flags = '-whole-module-optimization'
-  spec.ios.deployment_target = '9.0'
-  spec.osx.deployment_target = '10.9'
-  spec.watchos.deployment_target = '2.0'
-  spec.tvos.deployment_target = '9.0'
+
+  spec.ios.deployment_target = '11.0'
+  spec.osx.deployment_target = '10.13'
+  spec.watchos.deployment_target = '4.0'
+  spec.tvos.deployment_target = '11.0'
 
   spec.pod_target_xcconfig = {
     'APPLICATION_EXTENSION_API_ONLY' => 'YES',
