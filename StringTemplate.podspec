@@ -17,6 +17,6 @@ Pod::Spec.new do |spec|
   spec.tvos.deployment_target = '9.0'
 
   spec.pod_target_xcconfig = {
-    'APPLICATION_EXTENSION_API_ONLY' => 'NO',
+    'APPLICATION_EXTENSION_API_ONLY' => 'YES',
   }
 end
