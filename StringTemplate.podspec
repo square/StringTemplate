@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'StringTemplate'
-  spec.version = '2.1.0'
+  spec.version = '2.2.0'
   spec.license = 'Apache License, Version 2.0'
   spec.homepage = 'https://github.com/square/StringTemplate'
   spec.authors = 'Square'
